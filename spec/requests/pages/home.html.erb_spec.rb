@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'pages/home' do
 
-  before(:each){ render template: 'pages/home', layout: 'layouts/application' }
+  before(:each){ get root_path }
 
   it { assert_select 'title', 'Family Farms' }
   it { assert_select 'h1', 'Welcome to Family Farms' }

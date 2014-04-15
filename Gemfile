@@ -29,8 +29,11 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem 'rails_12factor', group: :production
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'factory_girl_rails'
 end
+
